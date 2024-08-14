@@ -13,8 +13,8 @@ This project is a Next.js implementation of the Gotru website's landing page. It
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ahmadalrihawy/Gotru.git
-   cd Gotru
+   git clone https://github.com/ahmadalrihawy/gotru.git
+   cd gotru
    ```
 2. Install dependencies:
    ```bash
