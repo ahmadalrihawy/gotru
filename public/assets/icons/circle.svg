@@ -1,0 +1,16 @@
+<svg width="206" height="206" viewBox="0 0 206 206" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="mask0_12_427" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="206" height="206">
+    <rect x="0.760742" y="0.622314" width="204.858" height="204.858" rx="102.429" fill="#D9D9D9"/>
+  </mask>
+  <g mask="url(#mask0_12_427)">
+    <rect x="0.760742" y="0.622314" width="204.858" height="204.858" fill="url(#paint0_radial_12_427)" fill-opacity="0.47"/>
+    
+    <rect x="0.760742" y="0.622314" width="204.858" height="204.858" fill="#D9D9D9" style="mix-blend-mode:luminosity;"/>
+  </g>
+  <defs>
+    <radialGradient id="paint0_radial_12_427" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(150.436 38.2349) rotate(105.775) scale(173.791)">
+      <stop stop-color="#B2227D"/>
+      <stop offset="1" stop-color="#ED8244"/>
+    </radialGradient>
+  </defs>
+</svg>

@@ -1,0 +1,64 @@
+.card {
+  background-color: var(--se-background-color);
+  padding: 40px 48px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+.card:hover {
+  background-color: var(--se-text-color);
+}
+ .card .cardIcon {
+  margin-bottom: 20px;
+}
+.card h2 {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26.46px;
+  font-family: var(--main-font);
+  color: var(--se-text-color);
+  margin-bottom: 5px;
+}
+.card:hover h2 {
+  color: var(--background-color);
+}
+ .card p {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: var(--main-font);
+  line-height: 21px;
+  color: var(--par-color);
+  opacity: 60%;
+}
+ .card:hover p {
+  color: var(--background-color);
+}
+ .card .cardBtn {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 5px;
+  cursor: pointer;
+}
+ .card:hover .cardBtn span {
+  color: var(--background-color);
+}
+ .card .cardBtn svg rect {
+  fill: #003449;
+}
+ .card .cardBtn svg path {
+  fill: #71b331;
+}
+.card:hover .cardBtn svg rect {
+  fill: #71b331;
+}
+ .card:hover .cardBtn svg path {
+  fill: #fff;
+}
+ .card .cardBtn span {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: var(--se-text-color);
+}

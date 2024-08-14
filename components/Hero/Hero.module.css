@@ -1,0 +1,111 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.1;
+}
+.hero .title h1 {
+  font-family: var(--main-font);
+  color: #005171;
+  font-size: 5.75rem;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .hero .title h1 {
+    font-size: 2.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero .title h1 {
+    font-size: 3.75rem;
+  }
+}
+
+.hero .title .heroH1 {
+  position: relative;
+  z-index: 3;
+  mix-blend-mode: luminosity;
+}
+.title .secondLine {
+  position: relative;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  z-index: 2;
+}
+.title .imageContainer {
+  position: absolute;
+  left: 49%;
+  bottom: -60px;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .title .imageContainer {
+    bottom: -38px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .title .imageContainer {
+    bottom: -50px;
+  }
+}
+
+.title .secondLine .heroLogo {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  width: 142px;
+  height: 94px;
+}
+@media (max-width: 768px) {
+  .title .secondLine .heroLogo {
+    width: 65px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .title .secondLine .heroLogo {
+    width: 85px;
+  }
+}
+
+.hero .title .secondLine .circle {
+  mix-blend-mode: luminosity;
+  width: 200px;
+  height: 200px;
+}
+@media (max-width: 768px) {
+  .hero .title .secondLine .circle {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero .title .secondLine .circle {
+    width: 130px;
+    height: 150px;
+  }
+}
+.description {
+  text-align: center;
+  font-family: var(--se-font);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #2c2c2c;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .description {
+    font-size: 0.8rem;
+  }
+}

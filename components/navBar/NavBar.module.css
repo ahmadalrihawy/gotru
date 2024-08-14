@@ -1,0 +1,111 @@
+.navBar {
+  position: fixed;
+  width: 100%;
+  margin-top: 30px;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 64px;
+}
+.menu {
+  display: none;
+}
+.mobileLinks {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+.navBar .container {
+  background-color: var(--background-color);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 56px;
+  border-radius: 64px;
+}
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+  }
+  .navBar .container {
+    border: 1px solid #005171;
+    padding: 20px 40px;
+  }
+  .menu {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+  .mobileLinks {
+    display: block;
+    padding: 20px;
+    width: 65%;
+    background-color: var(--background-color);
+    height: auto;
+    border: 1px solid #005171;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .navBar .container {
+    border: 1px solid #005171;
+    padding: 20px 40px;
+  }
+}
+.navBar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .logoImg {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .logoImg {
+    display: none;
+  }
+}
+
+.navBar .links {
+  display: flex;
+  gap: 32px;
+  font-weight: 700;
+  font-family: var(--se-font);
+  font-size: 16px;
+  color: var(--se-text-color);
+}
+@media (max-width: 768px) {
+  .navBar .links {
+    display: none;
+  }
+  .moblinks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 700;
+    font-family: var(--se-font);
+    font-size: 16px;
+    color: var(--se-text-color);
+  }
+}
+.navBar .links span {
+  cursor: pointer;
+}
+.navBar .logo {
+  font-size: 25px;
+  text-decoration: none !important;
+  font-family: var(--se-font);
+  font-weight: bold;
+}
+.navBar .logo p {
+  background: linear-gradient(90.84deg, #005171 43.98%, #71b331 68.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

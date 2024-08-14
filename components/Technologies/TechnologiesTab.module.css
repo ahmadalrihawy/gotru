@@ -1,0 +1,38 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  .tabs {
+    width: 100%;
+    flex-direction: row;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .tabs {
+    width: 100%;
+    flex-direction: row;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.tabs span {
+  font-family: var(--main-font);
+  font-family: 400;
+  font-size: 1.37rem;
+  line-height: 1.73rem;
+  color: var(--background-color);
+  opacity: 40%;
+  cursor: pointer;
+  transition: 0.3s;
+  width: fit-content;
+}
+.tabs .active {
+  color: var(--background-color);
+  opacity: 100%;
+}

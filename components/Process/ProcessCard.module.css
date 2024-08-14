@@ -1,0 +1,65 @@
+.procCard {
+  background-color: var(--se-background-color);
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 4.5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .procCard {
+    width: 65%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .procCard {
+    width: 75%;
+  }
+}
+.procCard.active {
+  background-color: var(--se-text-color);
+  transform: scale(1.4);
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .procCard.active {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .procCard.active {
+    transform: scale(1.1);
+  }
+}
+.procCard.active img {
+  filter: invert(5);
+}
+.procCard h1 {
+  font-weight: 700;
+  font-size: 0.67rem;
+  line-height: 0.7rem;
+  color: var(--se-text-color);
+  font-family: var(--se-font);
+}
+
+.procCard.active h1 {
+  color: var(--background-color);
+}
+
+.procCard p {
+  font-weight: 400;
+  font-family: var(--main-font);
+  font-size: 0.51rem;
+  line-height: 0.56rem;
+  color: var(--se-text-color);
+}
+
+.procCard.active p {
+  color: var(--background-color);
+}

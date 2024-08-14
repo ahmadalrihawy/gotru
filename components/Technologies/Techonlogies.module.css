@@ -1,0 +1,240 @@
+.techCard {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 24px;
+  background-color: var(--se-text-color);
+
+  padding: 80px 108px 0px 108px;
+}
+@media (max-width: 768px) {
+  .techCard {
+    padding: 20px 20px 0px 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .techCard {
+    padding: 30px 30px 0px 30px;
+  }
+}
+.techHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .techHeader {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .techHeader {
+    flex-direction: column;
+  }
+}
+.techHeader .techLogo {
+  width: 200px;
+  height: 200px;
+}
+
+.headerContent {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .headerContent {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .headerContent {
+    width: 100%;
+  }
+}
+.sectionHeading {
+  text-transform: uppercase;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.06rem;
+  letter-spacing: 2px;
+  color: var(--background-color);
+  opacity: 60%;
+}
+.headerContent h1 {
+  font-family: var(--main-font);
+  width: 80%;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: var(--background-color);
+  text-shadow: 0px 0px 20px #ffffff40;
+}
+@media (max-width: 768px) {
+  .headerContent h1 {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .headerContent h1 {
+    width: 100%;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+}
+.headerContent p {
+  font-weight: 400;
+  font-family: var(--main-font);
+  line-height: 4rem;
+  font-size: 2.5rem;
+  color: var(--background-color);
+  opacity: 60%;
+
+  text-shadow: 0px 0px 20px #ffffff40;
+}
+@media (max-width: 768px) {
+  .headerContent p {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .headerContent p {
+    width: 100%;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+.exploreButton {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.exploreButton span {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--background-color);
+}
+.Technologies {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+@media (max-width: 768px) {
+  .Technologies {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .Technologies {
+    flex-direction: column;
+  }
+}
+.techCardTabs {
+  position: relative;
+  width: auto;
+  height: fit-content;
+  display: flex;
+  margin-top: 50px;
+}
+@media (max-width: 768px) {
+  .techCardTabs {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .techCardTabs {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.slider {
+  position: relative;
+  width: 2px;
+  left: -80px;
+  top: 10px;
+}
+
+.line {
+  position: absolute;
+  height: 423px;
+  width: 100%;
+  background: linear-gradient(180deg, #e82b8a 0%, rgba(232, 43, 138, 0) 100.08%),
+    linear-gradient(180deg, #ff9862 0%, rgba(255, 152, 98, 0) 100.25%);
+}
+@media (max-width: 768px) {
+  .slider {
+    top: 0px;
+    width: 100%;
+    left: 0px;
+  }
+  .line {
+    height: 2px;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .slider {
+    top: 0px;
+    width: 100%;
+    left: 0px;
+  }
+  .line {
+    height: 2px;
+    width: 100%;
+  }
+}
+.circle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  transition: 0.5s;
+}
+@media (max-width: 768px) {
+  .circle {
+    left: 0;
+    top: 50%;
+    transform: translateX(0);
+    transform: translateY(-50%);
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .circle {
+    left: 0;
+    top: 50%;
+    transform: translateX(0);
+    transform: translateY(-50%);
+  }
+}
+.techCards {
+  position: relative;
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .techCards {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .techCards {
+    width: 100%;
+  }
+}

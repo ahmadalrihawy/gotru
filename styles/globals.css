@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1990px) {
+  html {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 3839px) {
+  html {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 7670px) {
+  html {
+    font-size: 75px;
+  }
+}
+
+:root {
+  --background-color: #ffffff;
+  --se-background-color: #e2e2e2;
+  --text-color: #011f2a;
+  --se-text-color: #003449;
+  --par-color: #1f2126;
+  --main-font: "Outfit", sans-serif;
+  --se-font: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+.hero-section .hero-image {
+  position: absolute;
+  background-size: cover;
+  transform: scale(1.8);
+  top: -280px !important;
+  left: 150px !important;
+  width: 100vw !important;
+  opacity: 12%;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .hero-section .hero-image {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .hero-section .hero-image {
+    display: none;
+  }
+}
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.tech-cards {
+  position: relative;
+}
+
+.tech-cards .cards-container {
+  position: relative;
+  width: 100%;
+}
+
+.services-section {
+  position: relative;
+  margin-top: 100px;
+}
